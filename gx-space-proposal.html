@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GX SPACE 壁球馆 · 营销合作提案</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+
+    :root {
+      --gold: #C9A84C;
+      --gold-light: #E8C96A;
+      --gold-dim: #8B6D2A;
+      --gold-glow: rgba(201,168,76,0.15);
+      --teal: #00D4AA;        /* 科技感青绿 */
+      --teal-dim: #00A888;
+      --black: #0A0A0A;
+      --dark: #111114;
+      --card: #13131A;
+      --card2: #1A1A24;
+      --border: rgba(201,168,76,0.2);
+      --border-teal: rgba(0,212,170,0.2);
+      --text: #E8E0D0;
+      --muted: #888;
+      --red: #C0392B;
+      --green: #27AE60;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--black);
+      color: var(--text);
+      font-family: 'Noto Sans SC', 'PingFang SC', sans-serif;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    /* ─── TECH GRID BACKGROUND ─── */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-image:
+        linear-gradient(rgba(201,168,76,0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(201,168,76,0.025) 1px, transparent 1px);
+      background-size: 48px 48px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container { position: relative; z-index: 1; }
+    .header { position: relative; z-index: 1; }
+    .section { position: relative; z-index: 1; }
+    .footer { position: relative; z-index: 1; }
+
+    /* ─── HEADER ─── */
+    .header {
+      background: linear-gradient(160deg, #0a0a12 0%, #0f0d08 40%, #0a0a0a 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 64px 0 48px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* 顶部装饰线条 */
+    .header::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0; height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold), var(--teal), var(--gold), transparent);
+    }
+
+    .header::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(ellipse 70% 60% at 50% 0%, rgba(201,168,76,0.08) 0%, transparent 70%);
+    }
+
+    .header-badge {
+      display: inline-block;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      font-size: 11px;
+      letter-spacing: 3px;
+      padding: 5px 18px;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+      font-family: 'Noto Sans SC', sans-serif;
+      font-weight: 300;
+    }
+
+    .header h1 {
+      font-family: 'Noto Serif SC', serif;
+      font-size: clamp(28px, 5vw, 52px);
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 4px;
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+
+    .header h1 span { color: var(--gold); }
+
+    .header-sub {
+      font-size: 14px;
+      color: var(--muted);
+      letter-spacing: 4px;
+      margin-bottom: 36px;
+      font-weight: 300;
+    }
+
+    .header-meta {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .meta-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .meta-label {
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: 1px;
+    }
+
+    .meta-value {
+      font-size: 13px;
+      color: var(--gold);
+      font-weight: 500;
+    }
+
+    /* ─── LAYOUT ─── */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section {
+      padding: 64px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+
+    /* ─── SECTION TITLE ─── */
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 36px;
+    }
+
+    .section-num {
+      width: 36px; height: 36px;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      font-size: 13px;
+      font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      font-family: 'Noto Serif SC', serif;
+      position: relative;
+      background: rgba(201,168,76,0.04);
+    }
+
+    .section-num::after {
+      content: '';
+      position: absolute;
+      top: -1px; right: -1px;
+      width: 8px; height: 8px;
+      border-top: 1px solid var(--teal);
+      border-right: 1px solid var(--teal);
+    }
+
+    .section-title {
+      font-family: 'Noto Serif SC', serif;
+      font-size: clamp(18px, 3vw, 24px);
+      font-weight: 600;
+      color: #fff;
+      letter-spacing: 2px;
+    }
+
+    .section-title em {
+      color: var(--gold);
+      font-style: normal;
+    }
+
+    .section-line {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, var(--border), transparent);
+    }
+
+    /* ─── CARDS ─── */
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 28px 32px;
+      margin-bottom: 16px;
+    }
+
+    .card-gold {
+      background: linear-gradient(135deg, #1a1200 0%, var(--card) 100%);
+      border-color: var(--gold);
+    }
+
+    /* ─── INFO GRID ─── */
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .info-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 24px;
+      position: relative;
+    }
+
+    .info-card::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 3px; height: 100%;
+      background: var(--gold);
+    }
+
+    .info-card.teal::after { background: var(--teal); }
+    .info-card.teal { border-color: var(--border-teal); }
+
+    .info-card-label {
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+
+    .info-card-value {
+      font-size: 15px;
+      color: var(--text);
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    .info-card-value strong {
+      color: var(--gold);
+    }
+
+    /* ─── STATS ROW ─── */
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 2px;
+      margin-bottom: 32px;
+      border: 1px solid var(--border);
+    }
+
+    .stat-block {
+      background: var(--card);
+      padding: 28px 20px;
+      text-align: center;
+      border-right: 1px solid var(--border);
+      transition: background 0.2s;
+    }
+
+    .stat-block:last-child { border-right: none; }
+    .stat-block:hover { background: var(--card2); }
+
+    .stat-num {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .stat-num sup {
+      font-size: 16px;
+    }
+
+    .stat-label {
+      font-size: 12px;
+      color: var(--muted);
+      letter-spacing: 1px;
+    }
+
+    .stat-red .stat-num { color: #E74C3C; }
+    .stat-green .stat-num { color: var(--green); }
+
+    /* ─── PLAN COMPARE ─── */
+    .plan-compare {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+
+    @media (max-width: 700px) {
+      .plan-compare { grid-template-columns: 1fr; }
+    }
+
+    .plan-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      overflow: hidden;
+    }
+
+    .plan-card.recommended {
+      border-color: var(--gold);
+      position: relative;
+    }
+
+    /* 推荐卡片左上角科技感装饰 */
+    .plan-card.recommended::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 0; height: 0;
+      border-left: 40px solid transparent;
+      border-top: 40px solid rgba(0,212,170,0.08);
+      z-index: 2;
+    }
+
+    .plan-head {
+      padding: 20px 28px 16px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .plan-head .plan-label {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .plan-head .plan-tag {
+      font-size: 11px;
+      padding: 4px 12px;
+      border: 1px solid var(--muted);
+      color: var(--muted);
+      letter-spacing: 1px;
+    }
+
+    .plan-card.recommended .plan-head {
+      background: linear-gradient(135deg, #1a1200, var(--card));
+      position: relative;
+    }
+
+    .plan-card.recommended .plan-head::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; height: 2px;
+      background: linear-gradient(90deg, var(--gold), var(--teal));
+    }
+
+    .plan-card.recommended .plan-tag {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    .plan-body {
+      padding: 24px 28px;
+    }
+
+    .plan-subtitle {
+      font-size: 12px;
+      color: var(--gold);
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+      font-weight: 500;
+    }
+
+    .plan-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .plan-list li {
+      font-size: 13.5px;
+      color: #ccc;
+      padding-left: 16px;
+      position: relative;
+      line-height: 1.6;
+    }
+
+    .plan-list li::before {
+      content: '›';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+      font-size: 16px;
+      line-height: 1.4;
+    }
+
+    .plan-highlight {
+      margin-top: 20px;
+      padding: 14px 16px;
+      background: rgba(201,168,76,0.06);
+      border-left: 3px solid var(--gold);
+      font-size: 13px;
+      color: var(--text);
+    }
+
+    .plan-highlight strong { color: var(--gold); }
+
+    /* ─── TAG ROW ─── */
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .tag {
+      font-size: 12px;
+      padding: 5px 14px;
+      border: 1px solid rgba(201,168,76,0.3);
+      color: var(--gold-light);
+      letter-spacing: 1px;
+      background: rgba(201,168,76,0.04);
+    }
+
+    .tag.dark {
+      border-color: rgba(255,255,255,0.1);
+      color: var(--muted);
+    }
+
+    /* ─── TIMELINE ─── */
+    .timeline {
+      position: relative;
+      padding-left: 32px;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 8px; top: 8px; bottom: 8px;
+      width: 1px;
+      background: linear-gradient(180deg, var(--gold), var(--gold-dim), transparent);
+    }
+
+    .tl-item {
+      position: relative;
+      margin-bottom: 28px;
+    }
+
+    .tl-item::before {
+      content: '';
+      position: absolute;
+      left: -28px; top: 7px;
+      width: 10px; height: 10px;
+      border: 2px solid var(--gold);
+      background: var(--black);
+      border-radius: 50%;
+    }
+
+    .tl-phase {
+      font-size: 11px;
+      color: var(--gold);
+      letter-spacing: 2px;
+      margin-bottom: 4px;
+      font-weight: 500;
+    }
+
+    .tl-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+
+    .tl-desc {
+      font-size: 13px;
+      color: #aaa;
+      line-height: 1.6;
+    }
+
+    /* ─── RISK TABLE ─── */
+    .risk-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    @media (max-width: 600px) {
+      .risk-grid { grid-template-columns: 1fr; }
+    }
+
+    .risk-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 24px;
+    }
+
+    .risk-icon {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .risk-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    .risk-title.danger { color: #E74C3C; }
+    .risk-title.safe { color: var(--green); }
+
+    .risk-desc {
+      font-size: 12.5px;
+      color: #999;
+      line-height: 1.6;
+    }
+
+    /* ─── CONCLUSION ─── */
+    .conclusion-box {
+      background: linear-gradient(135deg, #1a1200 0%, #141414 100%);
+      border: 1px solid var(--gold);
+      padding: 40px 44px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .conclusion-box::before {
+      content: '"';
+      position: absolute;
+      right: 32px; top: -8px;
+      font-size: 120px;
+      color: rgba(201,168,76,0.06);
+      font-family: Georgia, serif;
+      line-height: 1;
+    }
+
+    .conclusion-title {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--gold);
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+    }
+
+    .conclusion-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .conclusion-list li {
+      font-size: 14px;
+      color: var(--text);
+      padding-left: 20px;
+      position: relative;
+      line-height: 1.6;
+    }
+
+    .conclusion-list li::before {
+      content: '◆';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+      font-size: 8px;
+      top: 5px;
+    }
+
+    /* ─── FOOTER ─── */
+    .footer {
+      text-align: center;
+      padding: 40px 24px;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-logo {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 16px;
+      color: var(--gold);
+      letter-spacing: 4px;
+      margin-bottom: 8px;
+    }
+
+    .footer-sub {
+      font-size: 12px;
+      color: var(--muted);
+      letter-spacing: 2px;
+    }
+
+    /* ─── DIVIDER ─── */
+    .gold-divider {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin: 32px 0;
+    }
+
+    .gold-divider::before,
+    .gold-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .gold-divider span {
+      font-size: 10px;
+      color: var(--gold);
+      letter-spacing: 4px;
+    }
+
+    /* ─── HIGHLIGHT TEXT ─── */
+    .highlight { color: var(--gold); font-weight: 600; }
+    .muted { color: var(--muted); font-size: 13px; }
+
+    /* ─── TWO-COL ─── */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    @media (max-width: 640px) {
+      .two-col { grid-template-columns: 1fr; }
+    }
+
+    /* ─── PROGRESS ─── */
+    .progress-bar {
+      height: 4px;
+      background: rgba(255,255,255,0.06);
+      margin-top: 8px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--gold-dim), var(--gold));
+    }
+
+    /* ─── NEXT STEP ─── */
+    .next-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+    }
+
+    .next-item {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 22px;
+      text-align: center;
+    }
+
+    .next-num {
+      width: 32px; height: 32px;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      font-size: 13px;
+      font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 12px;
+    }
+
+    .next-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+
+    .next-desc {
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .deadline-badge {
+      display: inline-block;
+      font-size: 11px;
+      padding: 3px 10px;
+      background: rgba(201,168,76,0.1);
+      color: var(--gold);
+      border: 1px solid rgba(201,168,76,0.3);
+      margin-top: 10px;
+    }
+
+    /* ─── FULL-PAGE WATERMARK ─── */
+    .watermark-wrap {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      pointer-events: none;
+      z-index: 9999;
+      overflow: hidden;
+      user-select: none;
+    }
+
+    .watermark-text {
+      position: absolute;
+      font-size: 13px;
+      color: rgba(201,168,76,0.07);
+      white-space: nowrap;
+      transform: rotate(-25deg);
+      letter-spacing: 3px;
+      font-weight: 500;
+    }
+
+    /* scroll reveal animation */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .section { animation: fadeUp 0.5s ease both; }
+  </style>
+</head>
+<body>
+
+<!-- 全文水印 -->
+<div class="watermark-wrap" id="watermark"></div>
+<script>
+(function(){
+  var wrap = document.getElementById('watermark');
+  var txt = '四川丰火传媒 · FENGHO MEDIA';
+  var cols = 6, rows = 10;
+  for (var r = 0; r < rows; r++) {
+    for (var c = 0; c < cols; c++) {
+      var el = document.createElement('span');
+      el.className = 'watermark-text';
+      el.textContent = txt;
+      el.style.left = (c * 22 - 8) + '%';
+      el.style.top = (r * 12) + '%';
+      wrap.appendChild(el);
+    }
+  }
+})();
+</script>
+
+<!-- ══════════════════ HEADER ══════════════════ -->
+<div class="header">
+  <div class="container">
+    <div class="header-badge">Marketing Proposal · 2026</div>
+    <!-- 科技运动标签 -->
+    <div style="display:flex;justify-content:center;gap:12px;margin-bottom:20px;flex-wrap:wrap;">
+      <span style="font-size:11px;padding:4px 14px;border:1px solid var(--teal);color:var(--teal);letter-spacing:2px;background:rgba(0,212,170,0.05);">🤖 AI+SPORTS</span>
+      <span style="font-size:11px;padding:4px 14px;border:1px solid var(--border);color:var(--muted);letter-spacing:2px;">🏐 SQUASH</span>
+      <span style="font-size:11px;padding:4px 14px;border:1px solid var(--border);color:var(--muted);letter-spacing:2px;">🏙 CHENGDU</span>
+    </div>
+    <h1>GX <span>SPACE</span> 壁球馆</h1>
+    <h1 style="font-size:clamp(16px,2.5vw,28px);color:var(--gold-light);letter-spacing:6px;font-weight:400;margin-top:8px;">营销合作提案</h1>
+    <p class="header-sub" style="margin-top:14px;">AI+SPORTS × LIFESTYLE × PARK ECONOMY</p>
+    <div class="header-meta">
+      <div class="meta-item">
+        <span class="meta-label">项目地点</span>
+        <span class="meta-value">成都锦城湖公园</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">提案方</span>
+        <span class="meta-value">丰火传媒</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">提案日期</span>
+        <span class="meta-value">2026.04</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ 公司介绍 ══════════════════ -->
+<div class="section" style="padding:48px 0 0;">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-num" style="border-color:var(--muted);color:var(--muted);">◎</div>
+      <h2 class="section-title" style="font-size:16px;">关于<em style="color:var(--muted);">我们</em></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="card card-gold" style="padding:32px 36px;">
+      <!-- 公司简介 -->
+      <div style="margin-bottom:28px;">
+        <div class="plan-subtitle" style="margin-bottom:12px;">四川丰火传媒有限公司</div>
+        <p style="font-size:13.5px;color:#ccc;line-height:1.85;margin-bottom:12px;">
+          总部位于成都，是一家专注于<strong style="color:var(--gold-light);">品牌全案营销、文旅IP打造与持续运营</strong>的全案媒体公司。<strong style="color:var(--gold-light);">年营业流水超1,500万元</strong>，团队深耕餐饮连锁、商业地产、文旅景区三大领域，具备从战略规划到落地执行的完整服务能力。
+        </p>
+        <p style="font-size:13.5px;color:#aaa;line-height:1.85;border-left:2px solid var(--gold-dim);padding-left:16px;">
+          我们不只是"做活动""做推广"，更擅长将一个地方的文化资源转化为可持续的市场化项目——<strong style="color:#ddd;">让流量变留量，让打卡变口碑，让一次消费变长期产业。</strong>
+        </p>
+      </div>
+
+      <!-- 服务领域 -->
+      <div style="margin-bottom:24px;">
+        <div style="font-size:11px;color:var(--muted);letter-spacing:3px;margin-bottom:16px;text-transform:uppercase;">Service Areas</div>
+        <div style="display:grid;grid-template-columns:1fr;gap:16px;">
+          <!-- 小红书 -->
+          <div style="padding:20px;background:rgba(201,168,76,0.03);border:1px solid rgba(201,168,76,0.12);border-radius:4px;">
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
+              <span style="font-size:16px;">📕</span>
+              <div style="font-size:14px;font-weight:600;color:#fff;">小红书 · 全案运营体系</div>
+            </div>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:5px;">
+              <li style="font-size:12px;color:#aaa;padding-left:12px;position:relative;"><span style="position:absolute;left:0;top:3px;width:4px;height:4px;background:var(--gold);"></span>蓝V账号代运营：从0到1搭建品牌号矩阵，笔记策划、发布排期、粉丝互动、数据复盘一站式托管</li>
+              <li style="font-size:12px;color:#aaa;padding-left:12px;position:relative;"><span style="position:absolute;left:0;top:3px;width:4px;height:4px;background:var(--gold);"></span>KOL/KOC金字塔式种草：头部破圈 + 腰部测评 + 素人口碑铺量</li>
+              <li style="font-size:12px;color:#aaa;padding-left:12px;position:relative;"><span style="position:absolute;left:0;top:3px;width:4px;height:4px;background:var(--gold);"></span>搜索SEO优化：关键词布局 + 话题矩阵，抢占品类搜索排名首位</li>
+              <li style="font-size:12px;color:#aaa;padding-left:12px;position:relative;"><span style="position:absolute;left:0;top:3px;width:4px;height:4px;background:var(--gold);"></span>直播带货：品牌自播 + 达人专场，品效合一转化闭环</li>
+            </ul>
+            <div style="font-size:11px;color:var(--teal);margin-top:10px;">✦ 已服务餐饮 / 文旅品牌 50+</div>
+          </div>
+
+          <!-- 抖音 -->
+          <div style="padding:20px;background:rgba(201,168,76,0.03);border:1px solid rgba(201,168,76,0.12);border-radius:4px;">
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
+              <span style="font-size:16px;">🎵</span>
+              <div style="font-size:14px;font-weight:600;color:#fff;">抖音 · 全链路营销</div>
+            </div>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:5px;">
+              <li style="font-size:12px;color:#aaa;padding-left:12px;position:relative;"><span style="position:absolute;left:0;top:3px;width:4px;height:4px;background:var(--gold);"></span><strong style="color:#bbb;">短视频内容生产：</strong>自有专业拍摄团队，核心成员曾为北京海底捞、北京大董餐饮集团提供视频制作服务，影视级品质保障</li>
+              <li style="font-size:12px;color:#aaa;padding-left:12px;position:relative;"><span style="position:absolute;left:0;top:3px;width:4px;height:4px;background:var(--gold);"></span>品牌宣传大片：城市形象片、景区宣传片、品牌故事片</li>
+              <li style="font-size:12px;color:#aaa;padding-left:12px;position:relative;"><span style="position:absolute;left:0;top:3px;width:4px;height:4px;background:var(--gold);"></span>本地生活团购：套餐设计、POI优化、达人探店、流量采买</li>
+              <li style="font-size:12px;color:#aaa;padding-left:12px;position:relative;"><span style="position:absolute;left:0;top:3px;width:4px;height:4px;background:var(--gold);"></span>DOU+/千川投放：精细化投流策略，ROI可控</li>
+            </ul>
+            <div style="font-size:11px;color:var(--teal);margin-top:10px;">✦ 影视级视频制作团队</div>
+          </div>
+
+          <!-- 大众点评 -->
+          <div style="padding:20px;background:rgba(201,168,76,0.03);border:1px solid rgba(201,168,76,0.12);border-radius:4px;">
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
+              <span style="font-size:16px;">📍</span>
+              <div style="font-size:14px;font-weight:600;color:#fff;">大众点评 · 必榜全案</div>
+            </div>
+            <ul style="list-style:none;display:flex;flex-direction;column-gap:5px;">
+              <li style="font-size:12px;color:#aaa;padding-left:12px;position:relative;"><span style="position:absolute;left:0;top:3px;width:4px;height:4px;background:var(--gold);"></span><strong style="color:#bbb;">必吃榜冲刺：</strong>门店评分提升（4.8→4.9+）、好评率优化、差评管理、榜单规则拆解精准冲榜</li>
+              <li style="font-size:12px;color:#aaa;padding-left:12px;position:relative;"><span style="position:absolute;left:0;top:3px;width:4px;height:4px;background:var(--gold);"></span>必玩榜 / 必住榜：文旅景区与住宿类目榜单运营</li>
+              <li style="font-size:12px;color:#aaa;padding-left:12px;position:relative;"><span style="position:absolute;left:0;top:3px;width:4px;height:4px;background:var(--gold);"></span>商户通运营：店铺装修、套餐设计、评价回复、会员体系搭建</li>
+              <li style="font-size:12px;color:#aaa;padding-left:12px;position:relative;"><span style="position:absolute;left:0;top:3px;width:4px;height:4px;background:var(--gold);"></span>数据化管理：<strong style="color:var(--gold);">同时运营351家门店</strong>SaaS化看板，实时监控GMV、退款率、ROS等核心指标</li>
+            </ul>
+            <div style="font-size:11px;color:var(--teal);margin-top:10px;">✦ 同时运营 351 家点评门店</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 合作品牌 -->
+      <div style="padding:22px 0 0;border-top:1px solid var(--border);">
+        <div style="font-size:11px;color:var(--muted);letter-spacing:3px;margin-bottom:16px;text-transform:uppercase;">Partners &amp; Projects · 部分合作品牌 / 项目</div>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;">
+          <span class="tag dark" style="padding:8px 16px;font-size:13px;">大院河·仙鱼莊</span>
+          <span class="tag dark" style="padding:8px 16px;font-size:13px;">蜀镇老火锅</span>
+          <span class="tag dark" style="padding:8px 16px;font-size:13px;">享月汤皇</span>
+          <span class="tag dark" style="padding:8px 16px;font-size:13px;">京祥和轩铜锅涮肉</span>
+          <span class="tag dark" style="padding:8px 16px;font-size:13px;">都氏家 DUSJOY</span>
+          <span class="tag dark" style="padding:8px 16px;font-size:13px;">新柯瑞集团（351家门店）</span>
+          <span class="tag dark" style="padding:8px 16px;font-size:13px;">麓湖 CPI 岛</span>
+          <span class="tag dark" style="padding:8px 16px;font-size:13px;">古滇名城</span>
+          <span class="tag dark" style="padding:8px 16px;font-size:13px;">四平铁东非遗展示馆</span>
+          <span class="tag dark" style="padding:8px 16px;font-size:13px;">洛带水龙节</span>
+        </div>
+
+        <!-- 核心标签 -->
+        <div style="margin-top:18px;display:flex;flex-wrap:wrap;gap:8px;">
+          <span class="tag dark">全案覆盖</span>
+          <span class="tag dark">自有团队</span>
+          <span class="tag dark">端到端交付</span>
+          <span class="tag dark">年流水 1,500万+</span>
+          <span class="tag dark">351家门店运营经验</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-num">01</div>
+      <h2 class="section-title">项目<em>基本信息</em></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="info-card-label">项目方向</div>
+        <div class="info-card-value">GX SPACE 壁球馆 · <strong>线上运营与品牌合作</strong></div>
+      </div>
+      <div class="info-card">
+        <div class="info-card-label">委托方</div>
+        <div class="info-card-value"><strong>光耀恒拓（成都）体育发展有限公司</strong></div>
+      </div>
+      <div class="info-card">
+        <div class="info-card-label">场馆位置</div>
+        <div class="info-card-value">成都<strong>锦城湖公园桥下空间</strong></div>
+        <div class="info-card-label" style="margin-top:10px;">场馆定位</div>
+        <div class="info-card-value"><strong>智能壁球 + 轻社交 + 公园经济</strong></div>
+      </div>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat-block">
+        <div class="stat-num">300<sup>万</sup></div>
+        <div class="stat-label">前期投入</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-num" style="font-size:20px;padding-top:6px;">2026.03</div>
+        <div class="stat-label">试运营时间</div>
+      </div>
+      <div class="stat-block stat-red">
+        <div class="stat-num">3<sup>万</sup></div>
+        <div class="stat-label">当前月营收</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-num">5~6<sup>万</sup></div>
+        <div class="stat-label">月运营成本</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-num">1.8<sup>万</sup></div>
+        <div class="stat-label">月租金</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="plan-subtitle">当前运营痛点</div>
+      <div class="tag-row">
+        <span class="tag">线上渠道未系统搭建</span>
+        <span class="tag">内容体系缺失</span>
+        <span class="tag">引流渠道空白</span>
+        <span class="tag">私域体系缺失</span>
+        <span class="tag">品牌曝光不足</span>
+        <span class="tag">收支倒挂</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ 02 品牌门店核心需求 ══════════════════ -->
+<div class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-num">02</div>
+      <h2 class="section-title">客户<em>核心需求</em></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="two-col">
+      <div class="card">
+        <div class="plan-subtitle">短期目标</div>
+        <ul class="plan-list">
+          <li>低成本启动线上运营</li>
+          <li>快速提升客流与品牌认知</li>
+          <li>3个月内实现收支基本持平</li>
+        </ul>
+      </div>
+      <div class="card card-gold">
+        <div class="plan-subtitle">长期规划</div>
+        <ul class="plan-list">
+          <li>打造「南门壁球/运动公园」区域 IP，结合赛事、圈层活动、跨界合作</li>
+          <li>延伸「日咖夜酒+轻餐」场景，探索宠物友好、家庭消费等情绪价值体验</li>
+          <li>复制模式至青龙湖、兴隆湖等成都公园场景，构建连锁品牌</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="gold-divider"><span>GROWTH PATH</span></div>
+
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-phase">PHASE 01 · 0-3个月</div>
+        <div class="tl-title">快速引流 · 品牌破冰</div>
+        <div class="tl-desc">搭建三平台基建，上线团购，首场跨界活动，建立种子用户私域池</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-phase">PHASE 02 · 3-6个月</div>
+        <div class="tl-title">深度运营 · 圈层渗透</div>
+        <div class="tl-desc">打造赛事IP、联合瑜伽/医美等高净值人群，日咖夜酒场景落地，月营收突破10万</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-phase">PHASE 03 · 6-12个月</div>
+        <div class="tl-title">模型验证 · 复制扩张</div>
+        <div class="tl-desc">单店模型跑通后，向青龙湖、兴隆湖等区域复制，探索股权合作与区域联营</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ 03 合作方案对比 ══════════════════ -->
+<div class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-num">03</div>
+      <h2 class="section-title">合作<em>方案对比</em></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="plan-compare">
+
+      <!-- 方案A -->
+      <div class="plan-card">
+        <div class="plan-head">
+          <span class="plan-label">方案 A</span>
+          <span class="plan-tag">月度付费</span>
+        </div>
+        <div class="plan-body">
+          <div class="plan-subtitle">抖音团购 · 轻量对赌</div>
+          <ul class="plan-list">
+            <li>免前期服务费，以<strong style="color:#fff;">佣金分成15%</strong>（含平台扣点）为主</li>
+            <li>协助搭建抖音/小红书基建，定向投流（瑜伽、医美等高净值人群）</li>
+            <li>整合异业资源（奶茶品牌、汤锅品牌等）联合活动</li>
+          </ul>
+
+          <div class="gold-divider" style="margin:20px 0 16px;"><span>基础建设</span></div>
+
+          <div class="plan-subtitle">全案托管</div>
+          <ul class="plan-list">
+            <li>三平台内容基建（小红书 / 大众点评 / 抖音 POI 信息完善）</li>
+            <li>抖音 + 新美大团购同步上线</li>
+            <li>全平台账号搭建、内容规划、达人投放、私域引流闭环</li>
+          </ul>
+
+          <div class="plan-highlight">
+            <strong>3个月目标：</strong>月营收 3万 → <strong style="color:var(--teal);">10万</strong>
+          </div>
+
+          <div class="card" style="margin-top:16px;padding:18px 20px;background:rgba(39,174,96,0.06);border-color:rgba(39,174,96,0.3);">
+            <div class="plan-subtitle" style="margin-bottom:12px;">结算方式</div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+              <div>
+                <div style="font-size:11px;color:var(--muted);margin-bottom:4px;">月度费用</div>
+                <div style="font-size:18px;font-weight:700;color:#27AE60;">¥6,000<span style="font-size:12px;font-weight:400;color:var(--muted);">/月</span></div>
+              </div>
+              <div>
+                <div style="font-size:11px;color:var(--muted);margin-bottom:4px;">抖音CPS佣金</div>
+                <div style="font-size:15px;font-weight:600;color:#ccc;"><strong style="color:#E74C3C;">15%</strong><span style="font-size:11px;color:var(--muted);">（含平台扣点）</span></div>
+              </div>
+              <div>
+                <div style="font-size:11px;color:var(--muted);margin-bottom:4px;">付款周期</div>
+                <div style="font-size:15px;font-weight:600;color:#ccc;">季度付款</div>
+              </div>
+              <div style="grid-column:1/-1;">
+                <div style="font-size:11px;color:var(--muted);margin-bottom:4px;">合同周期</div>
+                <div style="font-size:15px;font-weight:600;color:#ccc;">签订1年</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 方案B -->
+      <div class="plan-card recommended">
+        <div class="plan-head">
+          <span class="plan-label">方案 B</span>
+          <span class="plan-tag">★ 推荐方案</span>
+        </div>
+        <div class="plan-body">
+          <div class="plan-subtitle">抖音团购 · 风险共担</div>
+          <ul class="plan-list">
+            <li>博主坑位费<strong style="color:#fff;">双方各承担50%</strong></li>
+            <li>佣金分成调整为 <strong style="color:#fff;">7.5%</strong>（含平台扣点），降低客户持续成本</li>
+            <li>协助搭建抖音/小红书基建，定向投流（高净值人群）</li>
+            <li>整合异业资源联合活动，共担风险、共享增益</li>
+          </ul>
+
+          <div class="gold-divider" style="margin:20px 0 16px;"><span>基础建设</span></div>
+
+          <div class="plan-subtitle">全案托管</div>
+          <ul class="plan-list">
+            <li>三平台内容基建 + POI 信息完善</li>
+            <li>抖音 + 新美大团购同步上线</li>
+            <li>全平台账号搭建、内容规划、达人投放、私域引流闭环</li>
+          </ul>
+
+          <div class="plan-highlight">
+            <strong>3个月目标：</strong>月营收 3万 → <strong style="color:var(--teal);">10万</strong><br/>
+            <span style="font-size:12px;color:#aaa;margin-top:4px;display:block;">甲乙双方共担前期成本，共享增长收益，合作动力更强</span>
+          </div>
+
+          <div class="card" style="margin-top:16px;padding:18px 20px;background:rgba(201,168,76,0.06);border-color:rgba(201,168,76,0.3);">
+            <div class="plan-subtitle" style="margin-bottom:12px;">结算方式</div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+              <div>
+                <div style="font-size:11px;color:var(--muted);margin-bottom:4px;">季度打包价</div>
+                <div style="font-size:18px;font-weight:700;color:var(--gold);">¥12,800<span style="font-size:12px;font-weight:400;color:var(--muted);">/季度</span></div>
+              </div>
+              <div>
+                <div style="font-size:11px;color:var(--muted);margin-bottom:4px;">付款方式</div>
+                <div style="font-size:15px;font-weight:600;color:#ccc;">一次性付清</div>
+              </div>
+              <div style="grid-column:1/-1;">
+                <div style="font-size:11px;color:var(--muted);margin-bottom:4px;">服务内容</div>
+                <div style="font-size:13.5px;color:#ccc;"><strong style="color:var(--gold);">一个季度内</strong>完成<strong style="color:#fff;">小红书、抖音、新美大（大众点评）</strong>三平台的基础搭建，交付搭建成果，保证贵方人员能够胜任三平台基础操作和执行</div>
+              </div>
+              <div style="grid-column:1/-1;">
+                <div style="font-size:11px;color:var(--muted);margin-bottom:4px;">合同周期</div>
+                <div style="font-size:13.5px;color:#ccc;"><strong style="color:var(--gold);">第一季</strong> 基础搭建与执行培训　｜　<strong style="color:var(--gold);">第二季</strong> 投流策划与执行</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 方案异同对比 -->
+    <div class="card" style="overflow-x:auto;">
+      <div class="plan-subtitle">方案关键要素对比</div>
+      <table style="width:100%;border-collapse:collapse;font-size:13px;">
+        <thead>
+          <tr style="border-bottom:1px solid var(--border);">
+            <th style="text-align:left;padding:10px 16px;color:var(--muted);font-weight:400;width:28%;">要素</th>
+            <th style="text-align:center;padding:10px 16px;color:#ccc;font-weight:600;">方案 A</th>
+            <th style="text-align:center;padding:10px 16px;color:var(--gold);font-weight:600;">方案 B ★</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid rgba(255,255,255,0.04);">
+            <td style="padding:12px 16px;color:var(--muted);">服务费用</td>
+            <td style="padding:12px 16px;text-align:center;color:#27AE60;font-weight:500;">6,000元/月</td>
+            <td style="padding:12px 16px;text-align:center;color:var(--gold);">12,800元/季度</td>
+          </tr>
+          <tr style="border-bottom:1px solid rgba(255,255,255,0.04);">
+            <td style="padding:12px 16px;color:var(--muted);">抖音CPS佣金</td>
+            <td style="padding:12px 16px;text-align:center;color:#E74C3C;font-weight:500;">15%（含平台扣点）</td>
+            <td style="padding:12px 16px;text-align:center;color:var(--gold);">7.5%（含平台扣点）</td>
+          </tr>
+          <tr style="border-bottom:1px solid rgba(255,255,255,0.04);">
+            <td style="padding:12px 16px;color:var(--muted);">付款方式</td>
+            <td style="padding:12px 16px;text-align:center;color:#ccc;">季度付款</td>
+            <td style="padding:12px 16px;text-align:center;color:var(--gold);">一次性付清</td>
+          </tr>
+          <tr style="border-bottom:1px solid rgba(255,255,255,0.04);">
+            <td style="padding:12px 16px;color:var(--muted);">合同周期</td>
+            <td style="padding:12px 16px;text-align:center;color:#ccc;">1年</td>
+            <td style="padding:12px 16px;text-align:center;color:var(--gold);">1年</td>
+          </tr>
+          <tr style="border-bottom:1px solid rgba(255,255,255,0.04);">
+            <td style="padding:12px 16px;color:var(--muted);">服务范围</td>
+            <td style="padding:12px 16px;text-align:center;color:#ccc;">持续运营</td>
+            <td style="padding:12px 16px;text-align:center;color:var(--gold);">Q1搭建+Q2投流</td>
+          </tr>
+          <tr style="border-bottom:1px solid rgba(255,255,255,0.04);">
+            <td style="padding:12px 16px;color:var(--muted);">合作动力</td>
+            <td style="padding:12px 16px;text-align:center;color:#ccc;">一般</td>
+            <td style="padding:12px 16px;text-align:center;color:var(--gold);">强 · 甲乙共担</td>
+          </tr>
+          <tr>
+            <td style="padding:12px 16px;color:var(--muted);">适合场景</td>
+            <td style="padding:12px 16px;text-align:center;color:#ccc;">低月付·轻量启动</td>
+            <td style="padding:12px 16px;text-align:center;color:var(--gold);">季度打包·深度绑定</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ 04 项目潜在价值 ══════════════════ -->
+<div class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-num">04</div>
+      <h2 class="section-title">项目<em>潜在价值</em></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="info-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+      <div class="info-card">
+        <div class="info-card-label">赛道稀缺性</div>
+        <div class="info-card-value">
+          壁球属<strong>小众稀缺运动品类</strong>，契合中产健康社交需求，天然具备圈层高净值属性，竞对少，内容差异化空间大
+        </div>
+        <div class="progress-bar" style="margin-top:14px;"><div class="progress-fill" style="width:82%"></div></div>
+      </div>
+      <div class="info-card">
+        <div class="info-card-label">场景叠加价值</div>
+        <div class="info-card-value">
+          客户资源覆盖<strong>媒体、供应链、跨界品牌</strong>，可快速试水「运动+消费」复合模型，形成差异化竞争壁垒
+        </div>
+        <div class="progress-bar" style="margin-top:14px;"><div class="progress-fill" style="width:88%"></div></div>
+      </div>
+      <div class="info-card">
+        <div class="info-card-label">可复制性</div>
+        <div class="info-card-value">
+          若锦城湖单店模型跑通，可快速复制至<strong>青龙湖、兴隆湖</strong>等公园商圈，形成成都公园经济连锁品牌
+        </div>
+        <div class="progress-bar" style="margin-top:14px;"><div class="progress-fill" style="width:70%"></div></div>
+      </div>
+      <div class="info-card">
+        <div class="info-card-label">异业资源整合优势</div>
+        <div class="info-card-value">
+          丰火传媒可整合<strong>奶茶品牌、汤锅品牌、文旅景区</strong>等现有合作资源网络，通过异业联合活动降低获客成本，为GX SPACE率先构建区域合作生态
+        </div>
+        <div class="progress-bar" style="margin-top:14px;"><div class="progress-fill" style="width:65%"></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ 06 风险与应对 ══════════════════ -->
+<div class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-num">05</div>
+      <h2 class="section-title">风险<em>与应对</em></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="risk-grid">
+      <div class="risk-card">
+        <div class="risk-icon">⚠</div>
+        <div class="risk-title danger">风险 · 预算有限</div>
+        <div class="risk-desc">客户预算有限，对线上投入较谨慎，初期决策门槛较高，可能影响推进节奏</div>
+      </div>
+      <div class="risk-card">
+        <div class="risk-icon">✦</div>
+        <div class="risk-title safe">应对 · 降低决策门槛</div>
+        <div class="risk-desc">首阶段以「资源置换 + 佣金分成」模式切入，先跑数据，再谈深度服务费</div>
+      </div>
+      <div class="risk-card">
+        <div class="risk-icon">⚠</div>
+        <div class="risk-title danger">风险 · 市场教育成本高</div>
+        <div class="risk-desc">壁球对大众认知度低，新用户转化路径长，内容获客效率可能低于餐饮等成熟品类</div>
+      </div>
+      <div class="risk-card">
+        <div class="risk-icon">✦</div>
+        <div class="risk-title safe">应对 · 精准降低认知成本</div>
+        <div class="risk-desc">通过规则科普短视频、场景化体验vlog，将壁球"可玩化"呈现；聚焦高净值圈层而非大众泛流量，提升转化质量</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ 07 下一步行动计划 ══════════════════ -->
+<div class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-num">06</div>
+      <h2 class="section-title">下一步<em>行动计划</em></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="next-grid">
+      <div class="next-item">
+        <div class="next-num">01</div>
+        <div class="next-title">提交详细执行方案</div>
+        <div class="next-desc">包含阶段目标、执行步骤、预算分配、预期效果（平台曝光量、客流提升率）</div>
+        <div class="deadline-badge">签约后3个工作日</div>
+      </div>
+      <div class="next-item">
+        <div class="next-num">02</div>
+        <div class="next-title">首期跨界活动策划</div>
+        <div class="next-desc">设计「养生壁球体验日」跨界联名活动方案，联合异业品牌快速引爆话题声量</div>
+        <div class="deadline-badge">与Q1搭建同步推进</div>
+      </div>
+      <div class="next-item">
+        <div class="next-num">03</div>
+        <div class="next-title">输出 V1.0 线上运营方案</div>
+        <div class="next-desc">聚焦抖音内容矩阵搭建，明确内容节奏、达人投放计划及私域引流路径</div>
+        <div class="deadline-badge">签约后3个工作日</div>
+      </div>
+      <div class="next-item">
+        <div class="next-num">04</div>
+        <div class="next-title">配合餐饮场景联动规划</div>
+        <div class="next-desc">待贵方西餐简餐方案落地后，同步规划「餐+运动」的内容联动策略</div>
+        <div class="deadline-badge">Q1阶段跟进</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ 08 结论建议 ══════════════════ -->
+<div class="section" style="border-bottom:none;">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-num">07</div>
+      <h2 class="section-title">结论<em>建议</em></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="conclusion-box">
+      <div class="conclusion-title">丰火传媒 · 综合建议</div>
+      <ul class="conclusion-list">
+        <li>
+          <strong>推荐采用方案B</strong>——季度打包模式可确保合作双方共同投入、共享收益，执行培训交付后贵方团队即可独立操作三平台基础运营。若首季验证效果达标，后续可平滑过渡至长期合作。
+        </li>
+        <li>
+          <strong>首期聚焦抖音内容矩阵 + 首场跨界活动</strong>——建议以「养生壁球体验日」作为首个话题引爆点，联合异业品牌（如汤锅、茶饮）制造圈层声量，快速积累种子用户。
+        </li>
+        <li>
+          <strong>长期展望：公园经济运动IP连锁化</strong>——待锦城湖单店模型跑通后，可依托GX SPACE的AI+体育技术优势，向青龙湖、兴隆湖等成都公园场景复制，形成区域运动消费连锁品牌。
+        </li>
+      </ul>
+
+      <div style="margin-top:32px;padding-top:24px;border-top:1px solid var(--border);display:flex;flex-wrap:wrap;gap:12px;">
+        <span class="tag">推荐：方案B 季度打包</span>
+        <span class="tag">Q1 搭建培训 → Q2 投流策划</span>
+        <span class="tag">首期活动：跨界体验日</span>
+        <span class="tag">远期目标：公园场景连锁复制</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ FOOTER ══════════════════ -->
+<div class="footer">
+  <div class="footer-logo">丰火传媒 · FENGHO MEDIA</div>
+  <div class="footer-sub" style="margin-top:6px;">GX SPACE 壁球馆 · 营销合作提案 · 2026.04</div>
+  <div class="footer-sub" style="margin-top:4px;font-size:11px;opacity:0.4;">本提案内容仅供内部汇报使用，未经授权请勿对外传播</div>
+</div>
+
+</body>
+</html>
